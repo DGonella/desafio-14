@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <form id="formulario" class="formulario">
+        <h1>Formulario</h1>
+        <div class="formulario__campo">
+            <label for="primerNombre">Primer nombre:</label>
+            <input type="text" id="primerNombre" name="primerNombre">
+            <div class="error-msg" id="errorPrimerNombre"></div>
+        </div>
+
+        <div class="formulario__campo">
+            <label for="primerApellido">Primer apellido:</label>
+            <input type="text" id="primerApellido" name="primerApellido">
+            <div class="error-msg" id="errorPrimerApellido"></div>
+        </div>
+
+        <div class="formulario__campo">
+            <label>Tipo de documento</label>
+            <div class="radios">
+                <label>
+                    <input type="radio" name="tipoDocumento" value="DNI"> DNI
+                </label>
+                <label>
+                    <input type="radio" name="tipoDocumento" value="CUIL"> CUIL
+                </label>
+            </div>
+            <div class="error-msg" id="errorTipoDocumento"></div>
+        </div>
+
+        <div class="formulario__campo" id="campoNumeroDocumento">
+            <label for="numeroDocumento">Número de documento:</label>
+            <input type="text" id="numeroDocumento" name="numeroDocumento">
+            <div class="error-msg" id="errorNumeroDocumento"></div>
+        </div>
+
+        <div class="formulario__campo">
+            <label for="direccion">Dirección:</label>
+            <textarea id="direccion" name="direccion"></textarea>
+            <div class="error-msg" id="errorDireccion"></div>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="js/validaciones.js"></script>
+</body>
+</html>

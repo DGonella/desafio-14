@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.formulario {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 10%;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.formulario__campo {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+.radios {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background-color: #c581f3;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ee8dba;
+}
+
+.error-msg {
+    color: red;
+    font-size: 12px;
+}
+
+/* Media Queries */
+@media (min-width: 425px) {
+    .radios {
+        flex-direction: row;
+    }
+
+    #campoNumeroDocumento {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .formulario__campo {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
+h1{
+    text-align: center;
+    margin-bottom: 5%
+}
